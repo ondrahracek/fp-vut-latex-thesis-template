@@ -1,0 +1,55 @@
+\chapter{Technické ukázky}
+\label{chap:examples}
+
+Tato kapitola předvádí základní prvky sazby. Při psaní ji nahraďte vlastním
+textem. Kniha může být citována samostatně \cite{latex-companion} a později
+znovu \cite{latex-companion}. Webová dokumentace je uvedena v~\cite{latex-docs}.
+Více zdrojů lze odkázat jedním příkazem \cite{knuth1984,grobid2009}.
+
+\section{Odstavec a seznam}
+
+Odstavce oddělujte prázdným řádkem. Krátký výčet lze zapsat například takto:
+\begin{itemize}
+  \item první položka,
+  \item druhá položka,
+  \item poslední položka.
+\end{itemize}
+
+\section{Rovnice a odkaz}
+
+Rovnice~\eqref{eq:example} má vlastní štítek, na který lze odkazovat z~textu.
+\begin{equation}
+  a^2 + b^2 = c^2
+  \label{eq:example}
+\end{equation}
+
+\section{Tabulka}
+
+Tabulka~\ref{tab:example} ukazuje popisek a odkaz.
+\begin{table}[ht]
+  \centering
+  \caption{Ukázková struktura tabulky}
+  \label{tab:example}
+  \begin{tabular}{ll}
+    \toprule
+    Sloupec A & Sloupec B \\
+    \midrule
+    položka 1 & hodnota 1 \\
+    položka 2 & hodnota 2 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Obrázek}
+
+Obrázek~\ref{fig:example} používá pouze rámeček, aby šablona nepotřebovala
+další ukázkový binární soubor.
+\begin{figure}[ht]
+  \centering
+  \fbox{\rule{0pt}{35mm}\rule{0.65\textwidth}{0pt}}
+  \caption{Místo pro ukázkový obrázek}
+  \label{fig:example}
+\end{figure}
+
+% Vlastní soubor vložte do figures/ a rámeček výše nahraďte například:
+% \includegraphics[width=0.8\textwidth]{nazev-obrazku.pdf}

@@ -1,0 +1,45 @@
+% Neoficiální startovací šablona závěrečné práce FP VUT.
+% Údaje konkrétní práce vyplňte v settings.tex.
+\documentclass[zadani]{fpthesis}
+
+% Písmo a odkazy zachované z výchozí šablony FIT.
+\renewcommand{\rmdefault}{lmr}
+\renewcommand{\sfdefault}{qhv}
+\renewcommand{\ttdefault}{lmtt}
+\csdoublequotesoff
+\usepackage[unicode,colorlinks,plainpages=false]{hyperref}
+\definecolor{template-ref}{RGB}{223,52,30}
+\definecolor{template-cite}{HTML}{2F8F00}
+\definecolor{template-url}{HTML}{092EAB}
+% Titulní list převádí obsah na verzálky a očekává i název barvy RED.
+\colorlet{RED}{red}
+\hypersetup{linkcolor=template-ref,citecolor=template-cite,urlcolor=template-url}
+
+\graphicspath{{figures/}}
+\newcommand{\placeholder}[1]{\textcolor{RED}{\textbf{DOPLŇTE: #1}}}
+
+\input{settings}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\maketitle
+\tableofcontents
+\clearpage
+\hypersetup{pageanchor=true}
+
+\input{chapters/introduction}
+\input{chapters/examples}
+\input{chapters/conclusion}
+
+\bibliographystyle{czplain}
+\bibliography{references}
+
+% Volitelné seznamy patří až za použitou literaturu.
+% \listoffigures
+% \listoftables
+% \chapter*{Seznam použitých zkratek a symbolů}
+
+\appendix
+\input{appendices/example}
+
+\end{document}

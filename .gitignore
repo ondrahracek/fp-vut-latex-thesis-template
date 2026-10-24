@@ -1,0 +1,25 @@
+# Jediný adresář výstupů LaTeXu.
+/build/
+
+# Pomocné soubory, pokud překlad proběhne bez doporučeného -outdir.
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.lof
+*.lot
+*.out
+*.ptc
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Dočasné soubory editorů a operačních systémů.
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

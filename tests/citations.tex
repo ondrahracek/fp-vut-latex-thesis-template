@@ -1,0 +1,18 @@
+% Testovací dokument se záměrně syntetickými bibliografickými daty.
+\documentclass{article}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+
+\begin{document}
+První odkaz je záměrně klíč začínající písmenem Z \cite{zeta-book}.
+Následuje článek \cite{alpha-article} a jeho opakování \cite{alpha-article}.
+Vícenásobný odkaz testuje korporaci, editory a zkrácení více než pěti autorů
+\cite{corporate-web,conference-editors,many-authors}.
+Online kniha používá resolver v poli URL \cite{online-book}.
+Datovaný web má publikační datum před dostupností \cite{dated-web}.
+
+\bibliographystyle{czplain}
+\bibliography{tests/citations}
+\end{document}
